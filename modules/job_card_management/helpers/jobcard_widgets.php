@@ -7,7 +7,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
  */
 hooks()->add_action('admin_init', 'job_card_register_widgets');
 
-function register_jobcard_widgets()
+function job_card_register_widgets()
 {
     add_dashboard_widget('widget_total_jobcards', 'Total Job Cards', 'widget_total_jobcards_output');
     add_dashboard_widget('widget_pending_jobcards', 'Pending Job Cards', 'widget_pending_jobcards_output');
